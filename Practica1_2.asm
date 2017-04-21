@@ -1,0 +1,33 @@
+ORG 0000h
+
+JMP INICIO
+
+ORG 003Fh
+
+TABLA: DB 3h,3h,9h,0Ch
+
+ORG 0100h
+
+INICIO:
+	MOV DPTR, #TABLA
+	MOV A, #0h
+	MOV B, #0h
+	MOV R0, #4
+
+	BUCLE:
+		MOV A, #0
+		MOVC A, @A+DPTR
+		ADD A, B
+		INC DPTR
+		MOV B, A
+	DJNZ R0, BUCLE
+
+	MOV B, #4
+	DIV AB
+
+	MOV 43h, A
+	MOV 44h, B
+
+	
+
+END
