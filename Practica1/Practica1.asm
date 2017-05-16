@@ -35,8 +35,8 @@ INICIO:
 	;Realizamos la division
 	DIV AB
 	
-	;Insertamos B en la pila
-	PUSH B
+	;Insertamos B en el acumulador
+	MOV A, B
 
 	;Si B=0, saltamos a EXACTO
 	JZ EXACTO
