@@ -1,9 +1,10 @@
 *mcu*
 *adf
 *~*
-*bin
-*lst
-*hex
+*.bin
+*.o
+*.lst
+*.hex
 
 nbproject/
 build/
