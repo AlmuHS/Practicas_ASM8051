@@ -1,9 +1,10 @@
 *mcu*
 *adf
 *~*
-*bin
-*lst
-*hex
+*.bin
+*.o
+*.lst
+*.hex
 
-/C_PIC/PRAC_3/nbproject/private/
-/C_PIC/PRAC_3/build/default/
+nbproject/
+build/
